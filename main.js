@@ -65,7 +65,7 @@ function draw(){
 
         circle(left_x , left_y , 20);
 
-        if(status_d == FALSE){
+        if(status_d == false){
             try_everything.stop();
             do_life_big.play();
             document.getElementById("song_name").innerHTML = "Playing Do Life Big";
