@@ -44,7 +44,7 @@ function gotPoses(results){
 
         // setting the score of the left wrist by getting values from poseNet.
 
-        score_leftWrist = results[0].pose.leftWrist.confidence;
+        score_leftWrist = results[0].pose.keypoints[9].score;
         score_rightWrist = results[0].pose.rightWrist.confidence;
         console.log("Score Right Wrist --> "+ score_rightWrist + " Score Left Wrist ", score_leftWrist);
 
